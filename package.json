@@ -1,0 +1,32 @@
+{
+  "name": "node-direct-input",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test/test.js",
+    "clean": "cmake-js clean",
+    "build": "cmake-js build -G \"Visual Studio 15 2017 Win64\"",
+    "rebuild": "cmake-js rebuild -G \"Visual Studio 15 2017 Win64\"",
+    "build-nw": "cmake-js build --runtime=nw --runtime-version=<<YOUR-NW-VERSIONI>> --arch=x64 -G \"Visual Studio 15 2017 Win64\"",
+    "rebuild-nw": "cmake-js rebuild --runtime=nw --runtime-version=<<YOUR-NW-VERSIONI>> --arch=x64 -G \"Visual Studio 15 2017 Win64\"",
+    "build-electron": "cmake-js build --runtime=electron --runtime-version=<<YOUR-ELECTRON-VERSIONI>> --arch=x64 -G \"Visual Studio 15 2017 Win64\"",
+    "rebuild-electron": "cmake-js build --runtime=electron --runtime-version=<<YOUR-ELECTRON-VERSIONI>> --arch=x64 -G \"Visual Studio 15 2017 Win64\""
+  },
+  "keywords": [
+    "Key detected",
+    "Direct input"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manujoz/node-direct-input.git"
+  },
+  "author": "Manu Overa",
+  "license": "MIT",
+  "dependencies": {
+    "bindings": "^1.5.0"
+  },
+  "devDependencies": {
+    "node-addon-api": "^2.0.0"
+  }
+}
